@@ -22,10 +22,6 @@
                   // to fetch record
                   $res = mysqli_fetch_array($query);
 
-                  // echo "<pre>";
-                  // print_r($res['gender']);
-                  // Now this value put in the input field.
-
                   // Update query
                   if(isset($_POST['submit'])){
 

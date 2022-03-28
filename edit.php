@@ -27,13 +27,15 @@
 
                     $idupdate = $_GET['id'];
                     $name = $_POST['name'];
+                    $email = $_POST['email'];
+                    $mobile = $_POST['mobile'];
                     $age = $_POST['age'];
                     $gender = $_POST['gender'];
 
                     echo "<pre>";
                     print_r($gender);
                   //   // to write update query
-                    $updatequery = "update test set id=$idupdate, name='$name', age='$age', gender='$gender' where id=$idupdate";
+                    $updatequery = "update test set id=$idupdate, name='$name', email='$email', mobile='$mobile', age='$age', gender='$gender' where id=$idupdate";
 
                     $query = mysqli_query($conn,$updatequery);
                   //   // done
@@ -43,6 +45,14 @@
                 <div class="form-group">
                 <label>Name</label> 
                 <input type="text" name="name" class="form-control" value="<?php echo $res['name']; ?>" required /><br />
+                </div>
+                <div class="form-group">
+                <label>Email Id:</label> 
+                <input type="text" name="email" class="form-control" value="<?php echo $res['email']; ?>" required /><br />
+                </div>
+                <div class="form-group">
+                <label>Mobile No:</label> 
+                <input type="text" name="mobile" class="form-control" value="<?php echo $res['mobile']; ?>" required /><br />
                 </div>
                 <div class="form-group">  
                 <label>Age</label>

@@ -16,6 +16,8 @@
                 <tr>
                 <th>Id</th>
                 <th>Name</th>
+                <th>Email Id</th>
+                <th>Mobile No</th>
                 <th>Age</th>
                 <th>Gender</th>
                 <th colspan="2">Operation</th>
@@ -36,6 +38,8 @@
                <tr>
                 <td><?php echo $arrdata['id']; ?></td>
                 <td><?php echo $arrdata['name']; ?></td>
+                <td><?php echo $arrdata['email']; ?></td>
+                <td><?php echo $arrdata['mobile']; ?></td>
                 <td><?php echo $arrdata['age']; ?></td>
                 <td><?php echo $arrdata['gender']; ?></td>
                 <td><a href="edit.php?id=<?php echo $arrdata['id']; ?>" class="btn btn-primary btn-sm">Edit</a></td>
